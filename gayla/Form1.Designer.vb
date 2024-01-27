@@ -27,13 +27,15 @@ Partial Class Form1
         Label2 = New Label()
         txtUsername = New TextBox()
         txtpassword = New TextBox()
+        Label3 = New Label()
         SuspendLayout()
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(342, 282)
+        Button1.Font = New Font("Angsana New", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.Location = New Point(259, 247)
         Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
+        Button1.Size = New Size(199, 34)
         Button1.TabIndex = 0
         Button1.Text = "Login"
         Button1.UseVisualStyleBackColor = True
@@ -41,40 +43,54 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(233, 87)
+        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(114, 125)
         Label1.Name = "Label1"
-        Label1.Size = New Size(60, 15)
+        Label1.Size = New Size(64, 15)
         Label1.TabIndex = 1
         Label1.Text = "Username"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(233, 157)
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(114, 194)
         Label2.Name = "Label2"
-        Label2.Size = New Size(57, 15)
+        Label2.Size = New Size(59, 15)
         Label2.TabIndex = 2
         Label2.Text = "password"
         ' 
         ' txtUsername
         ' 
-        txtUsername.Location = New Point(308, 87)
+        txtUsername.Location = New Point(189, 125)
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(214, 23)
+        txtUsername.Size = New Size(376, 23)
         txtUsername.TabIndex = 3
         ' 
         ' txtpassword
         ' 
-        txtpassword.Location = New Point(308, 149)
+        txtpassword.Location = New Point(189, 194)
         txtpassword.Name = "txtpassword"
-        txtpassword.Size = New Size(209, 23)
+        txtpassword.Size = New Size(376, 23)
         txtpassword.TabIndex = 4
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Snap ITC", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(241, 27)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(157, 42)
+        Label3.TabIndex = 5
+        Label3.Text = "LOG IN"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        BackColor = SystemColors.ActiveCaption
+        ClientSize = New Size(675, 327)
+        Controls.Add(Label3)
         Controls.Add(txtpassword)
         Controls.Add(txtUsername)
         Controls.Add(Label2)
@@ -91,5 +107,6 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtpassword As TextBox
+    Friend WithEvents Label3 As Label
 
 End Class

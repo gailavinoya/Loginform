@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form4
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class btnReset
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,63 +20,152 @@ Partial Class Form4
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        PictureBox1 = New PictureBox()
-        PictureBox2 = New PictureBox()
-        PictureBox3 = New PictureBox()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        Label1 = New Label()
+        btnPaper = New Button()
+        btnRock = New Button()
+        btnScissors = New Button()
+        picPlayer = New Button()
+        picComputer = New Button()
+        PictureBox = New Label()
+        PictureBox1 = New Label()
+        Button1 = New Button()
+        Button2 = New Button()
+        Button3 = New Button()
         SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Showcard Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(151, 46)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(394, 33)
+        Label1.TabIndex = 3
+        Label1.Text = "Rock-Paper-Scissors Game"
+        ' 
+        ' btnPaper
+        ' 
+        btnPaper.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnPaper.Location = New Point(309, 390)
+        btnPaper.Name = "btnPaper"
+        btnPaper.Size = New Size(75, 70)
+        btnPaper.TabIndex = 4
+        btnPaper.Text = "✋"
+        btnPaper.UseVisualStyleBackColor = True
+        ' 
+        ' btnRock
+        ' 
+        btnRock.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnRock.Location = New Point(134, 392)
+        btnRock.Name = "btnRock"
+        btnRock.Size = New Size(75, 70)
+        btnRock.TabIndex = 5
+        btnRock.Text = "👊"
+        btnRock.UseVisualStyleBackColor = True
+        ' 
+        ' btnScissors
+        ' 
+        btnScissors.Font = New Font("Segoe UI", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnScissors.Location = New Point(487, 390)
+        btnScissors.Name = "btnScissors"
+        btnScissors.Size = New Size(75, 70)
+        btnScissors.TabIndex = 6
+        btnScissors.Text = "✌️"
+        btnScissors.UseVisualStyleBackColor = True
+        ' 
+        ' picPlayer
+        ' 
+        picPlayer.Location = New Point(151, 148)
+        picPlayer.Name = "picPlayer"
+        picPlayer.Size = New Size(108, 98)
+        picPlayer.TabIndex = 7
+        picPlayer.UseVisualStyleBackColor = True
+        ' 
+        ' picComputer
+        ' 
+        picComputer.Location = New Point(425, 150)
+        picComputer.Name = "picComputer"
+        picComputer.Size = New Size(103, 94)
+        picComputer.TabIndex = 8
+        picComputer.UseVisualStyleBackColor = True
+        ' 
+        ' PictureBox
+        ' 
+        PictureBox.AutoSize = True
+        PictureBox.Location = New Point(151, 130)
+        PictureBox.Name = "PictureBox"
+        PictureBox.Size = New Size(39, 15)
+        PictureBox.TabIndex = 9
+        PictureBox.Text = "Player"
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackgroundImage = My.Resources.Resources.paper1
-        PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox1.Location = New Point(229, 89)
+        PictureBox1.AutoSize = True
+        PictureBox1.Location = New Point(428, 130)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(100, 50)
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
+        PictureBox1.Size = New Size(61, 15)
+        PictureBox1.TabIndex = 10
+        PictureBox1.Text = "Computer"
         ' 
-        ' PictureBox2
+        ' Button1
         ' 
-        PictureBox2.BackgroundImage = My.Resources.Resources._67ebfd32e898b4ec3ae4e59ae33832c8
-        PictureBox2.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox2.Location = New Point(92, 89)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(100, 50)
-        PictureBox2.TabIndex = 1
-        PictureBox2.TabStop = False
+        Button1.Location = New Point(79, 518)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 11
+        Button1.Text = "Reset"
+        Button1.UseVisualStyleBackColor = True
         ' 
-        ' PictureBox3
+        ' Button2
         ' 
-        PictureBox3.BackgroundImage = My.Resources.Resources.rock
-        PictureBox3.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox3.Location = New Point(375, 89)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(100, 50)
-        PictureBox3.TabIndex = 2
-        PictureBox3.TabStop = False
+        Button2.Location = New Point(556, 518)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 23)
+        Button2.TabIndex = 12
+        Button2.Text = "Exit"
+        Button2.UseVisualStyleBackColor = True
         ' 
-        ' Form4
+        ' Button3
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        Button3.Location = New Point(255, 297)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(75, 23)
+        Button3.TabIndex = 13
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' btnReset
+        ' 
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(610, 450)
-        Controls.Add(PictureBox3)
-        Controls.Add(PictureBox2)
+        BackColor = Color.DarkSeaGreen
+        ClientSize = New Size(748, 553)
+        Controls.Add(Button3)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Controls.Add(PictureBox1)
-        Name = "Form4"
+        Controls.Add(PictureBox)
+        Controls.Add(picComputer)
+        Controls.Add(picPlayer)
+        Controls.Add(btnScissors)
+        Controls.Add(btnRock)
+        Controls.Add(btnPaper)
+        Controls.Add(Label1)
+        Name = "btnReset"
         Text = "Form4"
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents btnPaper As Button
+    Friend WithEvents btnRock As Button
+    Friend WithEvents btnScissors As Button
+    Friend WithEvents picPlayer As Button
+    Friend WithEvents picComputer As Button
+    Friend WithEvents PictureBox As Label
+    Friend WithEvents PictureBox1 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

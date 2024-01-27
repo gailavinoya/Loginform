@@ -40,6 +40,7 @@ Partial Class Form3
         Button16 = New Button()
         Button17 = New Button()
         TextBox1 = New TextBox()
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' Button1
@@ -155,7 +156,7 @@ Partial Class Form3
         ' Button12
         ' 
         Button12.Font = New Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button12.Location = New Point(288, 242)
+        Button12.Location = New Point(288, 245)
         Button12.Name = "Button12"
         Button12.Size = New Size(75, 50)
         Button12.TabIndex = 11
@@ -220,11 +221,23 @@ Partial Class Form3
         TextBox1.Size = New Size(318, 43)
         TextBox1.TabIndex = 17
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(50, 25)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(80, 15)
+        Label1.TabIndex = 18
+        Label1.Text = "Calculator"
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.RosyBrown
         ClientSize = New Size(411, 395)
+        Controls.Add(Label1)
         Controls.Add(TextBox1)
         Controls.Add(Button17)
         Controls.Add(Button16)
@@ -267,4 +280,5 @@ Partial Class Form3
     Friend WithEvents Button16 As Button
     Friend WithEvents Button17 As Button
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label1 As Label
 End Class
