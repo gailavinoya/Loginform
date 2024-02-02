@@ -1,89 +1,66 @@
-﻿Public Class btnReset
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles btnPaper.Click
-        Dim randomGenerator As New Random()
-        Dim computerChoice As Integer
+﻿Imports System.Reflection.Emit
 
-        picPlayer.Image = btnPaper.Image
-        computerChoice = randomGenerator.[Next](1, 4)
-        Select Case computerChoice
-            Case 1
-                picComputer.Image = btnRock.Image
-                PictureBox.Text = " Player won because paper covers rock "
-                Exit Select
-            Case 2
-                picComputer.Image = btnPaper.Image
-                PictureBox.Text = " TIE "
-                Exit Select
-            Case 3
-                picComputer.Image = btnScissors.Image
-                PictureBox.Text = " Computer won because scissors cut paper "
-                Exit Select
-        End Select
+Public Class btnReset
+    Dim score As Integer = 0
+
+    Dim strComputer() As String = {"Rock", "Paper", "Scissor"}
+
+    Private Sub btnRock_Click(sender As Object, e As EventArgs) Handles btnRock.Click
+        Dim rando As Integer = GetRandom(0, 3)
+        Label2.Text = strComputer(rando)
+        If rando = 0 Then
+            MessageBox.Show("Tie")
+            Label2.Text = ""
+        ElseIf rando = 1 Then
+            MessageBox.Show("You Lose!")
+            Label2.Text = ""
+        Else
+            MessageBox.Show("You Won!")
+            score += 1
+            Label2.Text = ""
+            Label1.Text = score
+        End If
     End Sub
 
+    Private Sub btnPaper_Click(sender As Object, e As EventArgs) Handles btnPaper.Click
+        Dim rando As Integer = GetRandom(0, 3)
+        Label2.Text = strComputer(rando)
+        If rando = 0 Then
+            MessageBox.Show("You Won!")
+            score += 1
+            Label2.Text = ""
+            Label1.Text = score
+        ElseIf rando = 1 Then
+            MessageBox.Show("Tie")
+            Label2.Text = ""
+        Else
+            MessageBox.Show("You Lose!")
+            Label2.Text = ""
 
-    Private Sub UserSelection_Click(sender As Object, e As EventArgs) Handles btnRock.Click
-
+        End If
     End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles picComputer.Click
-
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles picPlayer.Click
-
-    End Sub
-
-    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim randomGenerator As New Random()
-        Dim computerChoice As Integer
-
-        picPlayer.Image = btnPaper.Image
-        computerChoice = randomGenerator.[Next](1, 4)
-        Select Case computerChoice
-            Case 1
-                picComputer.Image = btnRock.Image
-                PictureBox.Text = " Player won because paper covers rock "
-                Exit Select
-            Case 2
-                picComputer.Image = btnPaper.Image
-                PictureBox.Text = " TIE "
-                Exit Select
-            Case 3
-                picComputer.Image = btnScissors.Image
-                PictureBox.Text = " Computer won because scissors cut paper "
-                Exit Select
-        End Select
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles PictureBox.Click
-
-    End Sub
-
     Private Sub btnScissors_Click(sender As Object, e As EventArgs) Handles btnScissors.Click
-        Dim randomGenerator As New Random()
-        Dim computerChoice As Integer
-
-        picPlayer.Image = btnScissors.Image
-        computerChoice = randomGenerator.[Next](1, 4)
-        Select Case computerChoice
-            Case 1
-                picComputer.Image = btnRock.Image
-                PictureBox.Text = " Computer won because rock breaks scissors "
-                Exit Select
-            Case 2
-                picComputer.Image = btnPaper.Image
-                PictureBox.Text = " Player won because scissors cut paper "
-                Exit Select
-            Case 3
-                picComputer.Image = btnScissors.Image
-                PictureBox.Text = " TIE "
-                Exit Select
-        End Select
+        Dim rando As Integer = GetRandom(0, 3)
+        Label2.Text = strComputer(rando)
+        If rando = 0 Then
+            MessageBox.Show("You Lose!")
+            Label2.Text = ""
+        ElseIf rando = 1 Then
+            MessageBox.Show("You Won!")
+            score += 1
+            Label2.Text = ""
+            Label1.Text = score
+        Else
+            MessageBox.Show("Tie")
+            Label2.Text = ""
+        End If
     End Sub
+    Public Function GetRandom(ByVal Min As Integer, ByVal Max As Integer) As Integer
+        Dim Generator As System.Random = New System.Random()
+        Return Generator.Next(Min, Max)
+    End Function
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        picComputer.Image = PictureBox.Image
-        picPlayer.Image = PictureBox.Image
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Close()
     End Sub
 End Class

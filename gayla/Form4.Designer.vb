@@ -22,150 +22,107 @@ Partial Class btnReset
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Label1 = New Label()
+        rps1 = New Label()
         btnPaper = New Button()
         btnRock = New Button()
         btnScissors = New Button()
-        picPlayer = New Button()
-        picComputer = New Button()
-        PictureBox = New Label()
-        PictureBox1 = New Label()
-        Button1 = New Button()
         Button2 = New Button()
-        Button3 = New Button()
+        Label1 = New Label()
+        Label2 = New Label()
         SuspendLayout()
         ' 
-        ' Label1
+        ' rps1
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Showcard Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(151, 46)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(394, 33)
-        Label1.TabIndex = 3
-        Label1.Text = "Rock-Paper-Scissors Game"
+        rps1.AutoSize = True
+        rps1.Font = New Font("Showcard Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        rps1.Location = New Point(160, 100)
+        rps1.Name = "rps1"
+        rps1.Size = New Size(394, 33)
+        rps1.TabIndex = 3
+        rps1.Text = "Rock-Paper-Scissors Game"
         ' 
         ' btnPaper
         ' 
-        btnPaper.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnPaper.Location = New Point(309, 390)
+        btnPaper.Font = New Font("Microsoft Sans Serif", 36F)
+        btnPaper.Location = New Point(275, 189)
         btnPaper.Name = "btnPaper"
-        btnPaper.Size = New Size(75, 70)
+        btnPaper.Size = New Size(152, 125)
         btnPaper.TabIndex = 4
         btnPaper.Text = "✋"
         btnPaper.UseVisualStyleBackColor = True
         ' 
         ' btnRock
         ' 
-        btnRock.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnRock.Location = New Point(134, 392)
+        btnRock.Font = New Font("Microsoft Sans Serif", 36F)
+        btnRock.Location = New Point(85, 189)
         btnRock.Name = "btnRock"
-        btnRock.Size = New Size(75, 70)
+        btnRock.Size = New Size(148, 125)
         btnRock.TabIndex = 5
         btnRock.Text = "👊"
         btnRock.UseVisualStyleBackColor = True
         ' 
         ' btnScissors
         ' 
-        btnScissors.Font = New Font("Segoe UI", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnScissors.Location = New Point(487, 390)
+        btnScissors.Font = New Font("Microsoft Sans Serif", 36F)
+        btnScissors.Location = New Point(472, 189)
         btnScissors.Name = "btnScissors"
-        btnScissors.Size = New Size(75, 70)
+        btnScissors.Size = New Size(158, 125)
         btnScissors.TabIndex = 6
         btnScissors.Text = "✌️"
         btnScissors.UseVisualStyleBackColor = True
         ' 
-        ' picPlayer
-        ' 
-        picPlayer.Location = New Point(151, 148)
-        picPlayer.Name = "picPlayer"
-        picPlayer.Size = New Size(108, 98)
-        picPlayer.TabIndex = 7
-        picPlayer.UseVisualStyleBackColor = True
-        ' 
-        ' picComputer
-        ' 
-        picComputer.Location = New Point(425, 150)
-        picComputer.Name = "picComputer"
-        picComputer.Size = New Size(103, 94)
-        picComputer.TabIndex = 8
-        picComputer.UseVisualStyleBackColor = True
-        ' 
-        ' PictureBox
-        ' 
-        PictureBox.AutoSize = True
-        PictureBox.Location = New Point(151, 130)
-        PictureBox.Name = "PictureBox"
-        PictureBox.Size = New Size(39, 15)
-        PictureBox.TabIndex = 9
-        PictureBox.Text = "Player"
-        ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.AutoSize = True
-        PictureBox1.Location = New Point(428, 130)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(61, 15)
-        PictureBox1.TabIndex = 10
-        PictureBox1.Text = "Computer"
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(79, 518)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 11
-        Button1.Text = "Reset"
-        Button1.UseVisualStyleBackColor = True
-        ' 
         ' Button2
         ' 
-        Button2.Location = New Point(556, 518)
+        Button2.Location = New Point(611, 513)
         Button2.Name = "Button2"
-        Button2.Size = New Size(75, 23)
+        Button2.Size = New Size(109, 28)
         Button2.TabIndex = 12
         Button2.Text = "Exit"
         Button2.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' Label1
         ' 
-        Button3.Location = New Point(255, 297)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(75, 23)
-        Button3.TabIndex = 13
-        Button3.UseVisualStyleBackColor = True
+        Label1.AutoSize = True
+        Label1.Font = New Font("Ravie", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(545, 327)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(70, 22)
+        Label1.TabIndex = 14
+        Label1.Text = "Score"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Vineta BT", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(85, 327)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(164, 26)
+        Label2.TabIndex = 15
+        Label2.Text = "Computer:"
         ' 
         ' btnReset
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.DarkSeaGreen
         ClientSize = New Size(748, 553)
-        Controls.Add(Button3)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
         Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(PictureBox1)
-        Controls.Add(PictureBox)
-        Controls.Add(picComputer)
-        Controls.Add(picPlayer)
         Controls.Add(btnScissors)
         Controls.Add(btnRock)
         Controls.Add(btnPaper)
-        Controls.Add(Label1)
+        Controls.Add(rps1)
         Name = "btnReset"
         Text = "Form4"
         ResumeLayout(False)
         PerformLayout()
     End Sub
-    Friend WithEvents Label1 As Label
+    Friend WithEvents rps1 As Label
     Friend WithEvents btnPaper As Button
     Friend WithEvents btnRock As Button
     Friend WithEvents btnScissors As Button
-    Friend WithEvents picPlayer As Button
-    Friend WithEvents picComputer As Button
-    Friend WithEvents PictureBox As Label
-    Friend WithEvents PictureBox1 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
