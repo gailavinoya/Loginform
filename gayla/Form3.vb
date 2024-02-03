@@ -121,7 +121,8 @@
         Firstnum = TextBox1.Text
         TextBox1.Text = "0"
         Operator_Selector = True
-        Operations = 4 ' %
+        Operations = 4 ' Case "%"
+
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
@@ -134,6 +135,8 @@
                 TextBox1.Text = Firstnum - Secondnum
             ElseIf Operations = 3 Then
                 TextBox1.Text = Firstnum * Secondnum
+            ElseIf Operations = 4 Then
+                TextBox1.Text = Firstnum / Secondnum
             Else
                 If Secondnum = 0 Then
                     TextBox1.Text = "Error!"
